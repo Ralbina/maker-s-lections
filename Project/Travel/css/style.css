@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+select {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none; 
+    /* get rid of default appearance for IE8, 9 and 10 */
+}
+
+html {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+a{
+    text-decoration: none;
+}
+
+.nav__link,
+.nav__btn {
+    color: #B8BECD;
+    font-size: 16px;
+    padding: 10px 0;
+    line-height: 1.2;
+}
+.nav__link_active{
+    color: #202336;
+}
+.header{
+    padding: 40px 0;
+}
+.header__nav {
+    width: 663px; 
+     /* <что бы растянуть по этому размеру> */
+    display: flex;
+    justify-content: space-between;
+}
+.header .container{
+    padding: 0 120px;
+    display: flex;
+    /* текст передвинул на равне с кругом */
+    justify-content:space-between;
+}
+.logo{
+    width: 41px;
+    height: 41px;
+    border: 10px solid #1ABE84;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo span {
+    width: 15px;
+    height: 15px;
+    background-color: #FB8F1D;
+    border-radius: 50%;
+    border: none
+}
+
+
+
+.nav__btn{
+    width: 132px;
+    height: 44px;
+    background-color: #FB8F1D;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+}
+.nav__btn_outlined{
+    color:#FB8F1D ;
+    background-color: transparent;
+    border: 1px solid #FB8F1D;
+
+}
+
+/*  напишет стили сначала на обе кнопки */
+.nav__btn:hover{
+    color: #FB8F1D;
+    background-color:transparent;
+    border: 1px solid #FB8F1D;
+}
+/* потом перепишет силь на другую кнопку login */
+.nav__btn_outlined:hover{
+    color: white;
+    background-color: #FB8F1D;
+ }
+
+ /* Landing */
+ .landing .container {
+     display: flex;
+     justify-content:space-evenly;
+ }
+ .landing__left{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+ .landing__left h1{
+     width: 365px;
+     color:  #202336;
+     font-size: 64px;;
+     font-weight: 700px;
+
+ }
+ .holiday-finder{
+     display: flex;
+     flex-direction: column;
+     justify-content:space-between;
+     width: 471px;
+     height: 344px;
+
+    }
+
+/* h3 псевдо эдемент пишем display: block что бы появился */
+.holiday-finder__header h3::after{
+    content:'';
+    height: 2px;
+    width: 32px;
+    background-color: black;
+    border-radius: 4px;
+    display: block;
+
+}
+
+.holiday-finder__body{
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.holiday-finder__select {
+    width: 220px;
+    height: 52px;
+    border: 0.8px solid #afb0b9;
+    border-radius: 6px;
+    color: #202336;
+    padding: 10px 100px 10px 31px;
+    font-size: 15px;
+    font-weight: 400;
+    background: url("../img/Vector\ \(2\).svg") 90% no-repeat;
+  }
+  .holiday-finder__btn{
+      width: 180px;
+      height: 52px;
+      background-color:  #FB8F1D;
+      border-radius: 8px;
+      color: white;
+      text-align: center;
+      border: none;
+      font-size: 17px;
+      font-weight: 400;
+  }
+  .landing__right img {
+    width: 45vw;
+  }
+  
+  /* Hide hamburger */
+  .header label,
+  #hamburger {
+    display: none;
+    z-index: 3;
+  }
+  
+  @media screen and (max-width: 950px) {
+    .header__nav a {
+      box-sizing: border-box;
+      display: block;
+      border-top: 1px solid black;
+      font-size: 26px;
+  
+      /* to get rid of button's style */
+      border: none;
+      background-color: transparent;
+      width: 0;
+    }
+    .header label {
+      display: inline-block;
+      font-size: 40px;
+    }
+    .header__nav {
+      display: none;
+    }
+    .header input:checked ~ .header__nav {
+      position: fixed;
+      z-index: 2;
+      display: block;
+      background-color: #afb0b9;
+      width: 100vw;
+      height: 100vh;
+      padding: 2vw;
+    }
+  
+    .header a {
+      color: white;
+    }
+    .header .container {
+      padding: 0;
+    }
+  
+    .landing .container {
+      min-width: 768px;
+      padding: 0 20px;
+    }
+  }
+  
+  @media screen and (max-width: 845px) {
+    .landing .container {
+      min-width: 600px;
+      flex-wrap: wrap;
+    }
+    .landing__right img {
+      width: 65vw;
+      margin-top: 5vw;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .landing .container {
+      min-width: 450px;
+    }
+    .landing__right img {
+      width: 85vw;
+      margin-top: 6vw;
+      /* display: none; */
+    }
+  }

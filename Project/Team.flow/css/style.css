@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.nav__link {
+  color: #35414b;
+  font-size: 16px;
+  padding: 10px 0;
+  line-height: 1.2;
+}
+.nav__link_active {
+  color: aqua;
+}
+.header {
+  width: 100%;
+  height: 24px;
+  padding: 0px 70px;
+  margin: 30px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 100%;
+}
+.header__nav {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .contaner {
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+}
+#nav__link-1 {
+  margin: 0 0 0 70px;
+}
+.nav__btn {
+  width: 132px;
+  height: 44px;
+  background-color: #ece5ff;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #794cff;
+}
+
+.header__nav a:hover {
+  color: #794cff;
+}
+
+.nav__btn:hover {
+  background-color: #794cff;
+  color: #ece5ff;
+}
+
+.nav__inner {
+  margin-top: 200px;
+  text-align: center;
+  width: 300px;
+  height: 32px;
+  margin-left: 0;
+  background: #f2f9eb;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+#nav__inner_list-1 {
+  width: 150px;
+  background: #81c43b;
+  border-radius: 100px;
+}
+.neck {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.tittle {
+  width: 760px;
+  height: 144px;
+  left: 340px;
+  top: 252px;
+  font-weight: 600;
+  font-size: 64px;
+  margin: 0 auto;
+}
+
+.tittle-1 {
+  margin: 50px 0 0 100px;
+  width: 550px;
+  height: 48px;
+  left: 467px;
+  top: 420px;
+  text-align: center;
+  font-size: 16px;
+}
+@media all and (max-width: 944px) {
+  .tittle {
+    display: block;
+    width: 50%;
+    font-size: 20px;
+  }
+  .tittle-1 {
+    display: block;
+    width: 50%;
+    font-size: 6px;
+    word-wrap: initial;
+    /* margin: 0 0; */
+  }
+}
+
+.field {
+  height: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*    
+    width: 319px;
+    height: 52px;
+    left: 480px;
+    top: 500px;
+    display: flex;
+    justify-content: space-evenly;
+   
+} */
+.field__mail {
+  width: 319px;
+  height: 52px;
+  left: 480px;
+  top: 492px;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #e1e5ea;
+  box-sizing: border-box;
+  border-radius: 4px 0px 0px 4px;
+}
+.field__btn {
+  width: 164px;
+  height: 52px;
+  left: 795px;
+  top: 492px;
+  background: #794cff;
+  border: 1px solid #794cff;
+  box-sizing: border-box;
+  border-radius: 0px 4px 4px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: white;
+}
+/* .diagram {
+    margin-top: 100px;
+    margin-left: 150px;
+    width: 920px;
+    height: 654.29px;
+    left: 260px;
+    top: 592px;
+    display: flex;
+   justify-content: end; */
+/* } */
+@media all and (max-width: 850px) {
+  .field__btn {
+    width: 20%;
+  }
+  .field__mail {
+    width: 40%;
+    margin-left: 100px;
+  }
+  .diagram {
+    width: 85vw;
+    margin-top: 6vw;
+  }
+}
+
+/* .mail{
+    width: 300px;
+} */
+
+.landing__text {
+  margin-top: 1350px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.landing__img {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .timeline .block{
+    padding: 50px;
+    background:#FBFAFE; ;
+    margin-top: 150px;
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+.timeline__right {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    justify-content:space-evenly;
+}
+
+.timeline__right h4{
+    width: 153px;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #35414B;
+    text-align: center;
+    
+}
+.timeline__right h5 {
+    width: 308px;
+    color: #4E5A65;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 50px;
+    padding: 0 0 15px 0;
+}
+.recommendations__header{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 40px;
+    
+}
+
+.block-1{
+    padding: 50px;
+}
+
+.block-1 .recommendations__footer {
+    width: 1300px;
+    display: flex;
+    font-weight: normal;
+    font-size: 16px;
+    flex-wrap: wrap ;
+}
+
+.how-you-work{
+    background: #FBFAFE;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+} */

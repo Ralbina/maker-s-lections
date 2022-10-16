@@ -1,0 +1,44 @@
+ul{
+    list-style-type: none;
+    width: 500px;
+    text-decoration: none;
+}
+.btn-danger{
+    height: 48px;
+    border-radius: 0%;
+}
+.main-img{
+    background: url("..//fils/3792\ 1\ \(1\).png");
+    height: 614px;
+    background-repeat:no-repeat;
+    background-size:cover ;
+}
+ li{
+     position: relative;
+ }
+.active::after{
+    content:"";
+    height: 2px;
+    width: 15px;
+    background-color: red;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+
+}
+.about-us h1{
+    font-size: 50px;
+}
+
+.about-us h4{
+    font-weight: bold;
+}
+.services{
+    background-color: #F2F2F2;
+}
+.staff__avatar{
+background: url(../fils/avatar1.png);
+background-size: cover;
+height: 100px;
+width: 100px;
+}
